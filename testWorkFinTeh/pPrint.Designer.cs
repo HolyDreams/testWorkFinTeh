@@ -144,7 +144,6 @@
             labelCount.Size = new Size(80, 15);
             labelCount.TabIndex = 11;
             labelCount.Text = "Кол-во точек";
-            labelCount.Click += labelCount_Click;
             // 
             // textCount
             // 
@@ -153,7 +152,6 @@
             textCount.Name = "textCount";
             textCount.Size = new Size(57, 23);
             textCount.TabIndex = 10;
-            textCount.TextChanged += textCount_TextChanged;
             textCount.KeyPress += textX1_KeyPress;
             // 
             // butSide
@@ -187,6 +185,7 @@
             // 
             // panelMain
             // 
+            panelMain.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelMain.BorderStyle = BorderStyle.FixedSingle;
             panelMain.Location = new Point(24, 133);
             panelMain.Name = "panelMain";
@@ -216,7 +215,7 @@
             Controls.Add(textX1);
             Name = "pPrint";
             Size = new Size(454, 564);
-            Load += pPrint_Load;
+            Resize += pPrint_Resize;
             ResumeLayout(false);
             PerformLayout();
         }
