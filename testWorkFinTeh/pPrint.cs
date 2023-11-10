@@ -59,7 +59,8 @@ namespace testWorkFinTeh
             //    return;
             //}
             myGraph = Graphics.FromHwnd(panelMain.Handle);
-            myGraph.DrawArc(new Pen(Brushes.Red), 50, 50, 300, 300, 0, 300);
+            var rad = int.Parse(textR.Text);
+            myGraph.DrawArc(new Pen(Brushes.Red), 0, 0, rad, rad, 0, 300);
             myGraph.Save();
         }
 
