@@ -42,6 +42,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.BackgroundColor = SystemColors.Control;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
@@ -73,6 +74,7 @@
             // 
             // comboDate
             // 
+            comboDate.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             comboDate.FormattingEnabled = true;
             comboDate.Location = new Point(911, 17);
             comboDate.Name = "comboDate";
@@ -82,6 +84,7 @@
             // 
             // labelDate
             // 
+            labelDate.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelDate.AutoSize = true;
             labelDate.Location = new Point(816, 21);
             labelDate.Name = "labelDate";
@@ -91,6 +94,7 @@
             // 
             // textSearch
             // 
+            textSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textSearch.Location = new Point(568, 17);
             textSearch.Name = "textSearch";
             textSearch.Size = new Size(207, 23);
@@ -99,6 +103,7 @@
             // 
             // labelSearch
             // 
+            labelSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelSearch.AutoSize = true;
             labelSearch.Location = new Point(520, 20);
             labelSearch.Name = "labelSearch";

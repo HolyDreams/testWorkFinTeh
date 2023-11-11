@@ -70,7 +70,7 @@ namespace testWorkFinTeh.Pages
                 loadTable();
 
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = comboDate.SelectedIndex == 0 ? mainList : mainList.Where(a => a.VacationStart.HasValue && a.VacationStart.Value.Month <= comboDate.SelectedIndex && 
+            dataGridView1.DataSource = comboDate.SelectedIndex == 0 ? mainList : mainList.Where(a => a.VacationStart.HasValue && a.VacationStart.Value.Month <= comboDate.SelectedIndex &&
                                                                                                      (!a.VacationEnd.HasValue || (a.VacationEnd.HasValue && a.VacationEnd.Value.Month >= comboDate.SelectedIndex))).ToList();
             printTable();
         }
