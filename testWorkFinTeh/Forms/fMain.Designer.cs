@@ -51,20 +51,21 @@
             butSecond.TabIndex = 2;
             butSecond.Text = "2 Задание";
             butSecond.UseVisualStyleBackColor = true;
+            butSecond.Click += butSecond_Click;
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.Location = new Point(93, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(454, 564);
+            panel1.Size = new Size(1073, 564);
             panel1.TabIndex = 3;
             // 
             // fMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(550, 566);
+            ClientSize = new Size(1169, 566);
             Controls.Add(panel1);
             Controls.Add(butSecond);
             Controls.Add(butFirst);

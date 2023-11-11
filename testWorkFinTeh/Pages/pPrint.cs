@@ -119,9 +119,7 @@ namespace testWorkFinTeh
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
         {
-            myGraph = e.Graphics;
-            var linePen = new Pen(Brushes.Green);
-            var pointPen = new Pen(Brushes.Green, 3);
+            myGraph = Graphics.FromHwnd(panelMain.Handle);
             for (int i = 50; i < panelMain.Height; i += 50)
             {
                 var p1 = new Point(0, i);

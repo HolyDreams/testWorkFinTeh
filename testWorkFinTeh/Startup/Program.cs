@@ -1,4 +1,7 @@
-namespace testWorkFinTeh
+using System.Text.Json;
+using testWorkFinTeh.Models;
+
+namespace testWorkFinTeh.Startup
 {
     internal static class Program
     {
